@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8" />
+	<title>links</title>  
+	<link rel="stylesheet" type="text/css" href="style/links.css" />
+  </head>
+  
+  <body>
+  <!--The header of the index page.-->
+	<div id="header">
+	
+	  <div id="nav">
+	    <div  id="mylogo">
+	      <img src="img/1011.png" />
+		</div>
+		
+	    <ul id="navbar">
+            <li><a href="index.html" class="navlink">首页</a></li>
+            <li><a href="article.html" class="navlink">文章</a></li>
+            <li><a href="gallery.html" class="navlink">作品</a></li>
+            <li><a href="categories.html" class="navlink">种类</a></li>
+            <li><a href="links.html" class="navlink">联系</a></li>
+            <li><a href="about.html" class="navlink">关于</a></li>
+         </ul>
+	  </div>
+	  <a href="https://github.com/"  id="githublogo"><img src="img/icon-github.png" /></a>
+	</div>
+	
+
+	<div id="mainsection">
+	    <!--首页背景大图-->
+	    <div id="indexbigimg">
+		  <div id="formaltext">
+		    <h1>Links</h1>
+		  </div>
+		</div>
+		
+		<!--首页自我介绍-->
+		<div id="selfcontiner">
+		  <!--  <img src="img/167.png" id="headpic" /> -->
+		  <div id="headpic"></div>
+		   <div id="selfintruction">
+		      <h2>Hi, I'm Nian.</h2>
+			  <p>欢迎来到我的博客，很高兴能和你一起交流学习，深入交流请访问关于页</p>
+		   </div>
+		</div>
+		
+	</div>
+
+	
+	
+	
+	<!--The footer of the index page.-->
+	<div id="footer">
+	   <ul id="footernavbar">
+        <li><a href="index.html" class="navlink">首页</a></li>
+        <li><a href="article.html" class="navlink">文章</a></li>
+        <li><a href="gallery.html" class="navlink">作品</a></li>
+        <li><a href="categories.html" class="navlink">种类</a></li>
+        <li><a href="links.html" class="navlink">联系</a></li>
+        <li><a href="about.html" class="navlink">关于</a></li>
+	   </ul>
+	   
+	   <div id="reference">
+	      <ul class="referencenav">
+		    <h4>学习资料</h4>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+		  </ul>
+		  
+          <ul class="referencenav">
+		    <h4>友情链接</h4>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+		  </ul>
+		  
+		  <ul class="referencenav">
+		    <h4>学习资料</h4>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+		  </ul>
+		  
+		  <ul class="referencenav">
+		    <h4>友情链接</h4>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+		  </ul>
+		  
+		  <ul class="referencenav">
+		    <h4>学习资料</h4>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+			<li><a href="#" class="referencelink">LINK</a></li>
+		  </ul>
+	   </div>
+	   
+	   <div id="footermassage">
+	        <p>版权信息</p>
+			<a href="https://github.com/"><img src="img/icon-github.png" /></a>
+	   </div>
+	   
+	</div>
+	
+	
+    <script>
+       function hiddenGithub() {
+	      var html = document.documentElement;
+		  var githublogo = document.getElementById("githublogo");
+		  
+		  if(html.clientWidth<1050) {
+		    githublogo.style.display = "none";
+		  } else {
+		    githublogo.style.display = "block";
+		  }
+	   }
+	   window.onresize=function() {hiddenGithub();};
+    </script>
+  </body>
+</html>
