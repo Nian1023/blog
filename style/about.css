@@ -169,6 +169,8 @@ a.referencelink{
 .aboutimg{
 	display: block;
 	clear: both;
+	width: 140px;
+	height: 140px;
 	margin: 0 auto 20px auto;
 	border-radius: 50%;
 }

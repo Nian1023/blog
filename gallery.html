@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-	<title>gallery</title>  
+	<title>article</title>  
 	<link rel="stylesheet" type="text/css" href="style/gallery.css" />
   </head>
   
@@ -29,34 +29,53 @@
 	
 	<!--主体部分-->
     <div id="mainsection">
-	   <div id="tabsection">
-	   
-	       <ul id="alignnavbar">
-		      <li class="tablist"><a href="#" class="tablink" id="firstlink">ALL</a></li>
-			  <li class="tablist">
-			     <a href="#" class="tablink">JavaScript Util Functions</a>
-			     <ul class="downlist">
-				    <li><a href="#" class="downlink">Title</a></li>
-					<li><a href="#" class="downlink">Title</a></li>
-					<li><a href="#" class="downlink">Title</a></li>
-				 </ul>
-			  </li>
-			  <li class="tablist">
-			     <a href="#" class="tablink">UI Components</a>
-				 
-			  </li>
-			  <li class="tablist">
-			     <a href="#" class="tablink">Framework</a>
-				 
-			  </li>
-			  <li class="tablist">
-			     <a href="#" class="tablink">Applications</a>
-				 
-			  </li>
-		   </ul>
-		   <div id="displaytablist">
-		     注意下拉菜单栏覆盖了粉红div的一部分。因为下拉菜单栏中的元素是浮动的，不能撑开无序列表框，即无需列表框是没用高度的，粉红div无视浮动的元素，直接从父元素的左上角开始占据。
-		   </div>
+	   <div id="articlesection">
+	      <div class="article">
+		    <div class="tagbox">
+		       <div class="datetag">10.13</div>
+			   <div class="contenttag">学习记录</div>
+			</div> 
+		
+			<h2>12 posts in total.</h2>
+			<hr><br/>
+			<h1>2021</h1>
+			<div class="contentbox">
+				<!-- 无序列表 -->
+				<li><a href="#">SpringBoot2</a>                                                                  05-25</li>
+				<li><a href="#">SSM整合</a>                                                                      04-25</li>
+				<li><a href="#">Spring5</a>                                                                      03-25</li>
+				<li><a href="#">SpringMVC</a>                                                                    02-25</li>
+				<li><a href="#">Mybatis</a>                                                                      01-25</li>
+			</div>
+			 
+			<h1>2020</h1>
+			<div class="contentbox">
+				<!-- 无序列表 -->
+				<li><a href="#">Python</a>                                                                       04-25</li>
+				<li><a href="#">MySQL</a>                                                                        04-25</li>
+				<li><a href="#">Linux</a>                                                                        04-25</li>
+				<li><a href="#">JAVAWeb</a>                                                                      04-25</li>
+				<li><a href="#">HTML</a>                                                                         04-25</li>
+				<li><a href="#">JAVA</a>                                                                         04-25</li>
+				<li><a href="#">C</a>                                                                            04-25</li>
+			
+			</div>
+		  </div>
+		  
+		  
+		  <div id="pagenumberbox">
+		    <ol id="pagenumber">
+			   <li><a href="http://www.baidu.com/" class="pagelink">第一页</a></li>
+	           <li><a href="http://www.baidu.com/" class="pagelink">前一页</a></li>
+	           <li><a href="http://www.baidu.com/" class="pagelink">1</a></li>	 
+	           <li><a href="http://www.baidu.com/" class="pagelink">2</a></li>	 
+	           <li><a href="http://www.baidu.com/" class="pagelink">3</a></li>	 
+	           <li><a href="http://www.baidu.com/" class="pagelink">4</a></li>
+	           <li><a href="http://www.baidu.com/" class="pagelink">...</a></li>
+	           <li><a href="http://www.baidu.com/" class="pagelink">下一页</a></li>	
+			   <li id="lastpage"><a href="http://www.baidu.com/" class="pagelink">最后一页</a></li>
+	        </ol>
+		  </div>
 	   </div>
 	   
 	   <div id="siderbarsection">
@@ -71,8 +90,83 @@
 			 </form>
 		  </div>
 		  
+		  <!--右侧导航栏-->
+		  <div id="sidernavcase">
+		    <ul id="sidernav">
+			   <li><a href="#" class="sidernavlink">MySQL</a></li>
+			   <li><a href="#" class="sidernavlink">JAVA</a></li>
+			   <li><a href="#" class="sidernavlink">HTML</a></li>
+			   <li><a href="#" class="sidernavlink">其他文章</a></li>
+			</ul>
+		  </div>
 		  
-		  
+		  <!--日历表格-->
+		  <div id="datebox">
+		    <table id="datetable">
+			  <caption>
+			     <a href="#" id="pre">&lt;</a> 2023.11
+			     <a href="#" id="next">&gt;</a>
+			 </caption>
+			  <thead>
+		        <tr>
+			     <th>Mon</th>
+			     <th>Tue</th>
+			     <th>Wed</th>
+			     <th>Tur</th>
+			     <th>Fri</th>
+			     <th>Set</th>
+				 <th>Sun</th>
+		        </tr>
+		      </thead>
+		      <tbody>
+	            <tr>
+			     <td> </td>
+	             <td> </td>
+				 <td>1</td>
+				 <td id="seclected">2</td>
+				 <td>3</td>
+				 <td>4</td>
+				 <td>5</td>
+			    </tr>
+	            <tr>
+			     <td>6</td>
+	             <td>7</td>
+				 <td>8</td>
+				 <td>9</td>
+				 <td>10</td>
+				 <td>11</td>
+				 <td>12</td>
+			    </tr>			 
+	            <tr>
+			     <td>13</td>
+	             <td>14</td>
+				 <td>15</td>
+				 <td>16</td>
+				 <td>17</td>
+				 <td>18</td>
+				 <td>19</td>
+			    </tr>				 
+	            <tr>
+			     <td>20</td>
+	             <td>21</td>
+				 <td>22</td>
+				 <td>23</td>
+				 <td>24</td>
+				 <td>25</td>
+				 <td>26</td>
+			    </tr>
+	            <tr>
+			     <td>27</td>
+	             <td>28</td>
+				 <td>29</td>
+				 <td>30</td>
+				 <td> </td>
+				 <td> </td>
+				 <td> </td>
+			    </tr>
+		      </tbody>
+			</table>
+		  </div>
 	   </div>
 	</div>
 	

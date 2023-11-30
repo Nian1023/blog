@@ -16,77 +16,92 @@
 		</div>
 		
 	    <ul id="navbar">
-            <li><a href="index.html" class="navlink">首页</a></li>
-            <li><a href="article.html" class="navlink">文章</a></li>
-            <li><a href="gallery.html" class="navlink">作品</a></li>
-            <li><a href="categories.html" class="navlink">种类</a></li>
-            <li><a href="links.html" class="navlink">联系</a></li>
-            <li><a href="about.html" class="navlink">关于</a></li>
+			<li><a href="index.html" class="navlink">首页</a></li>
+			<li><a href="article.html" class="navlink">文章</a></li>
+			<li><a href="gallery.html" class="navlink">作品</a></li>
+			<li><a href="categories.html" class="navlink">种类</a></li>
+			<li><a href="links.html" class="navlink">联系</a></li>
+			<li><a href="about.html" class="navlink">关于</a></li>
 		</ul>
 	  </div>
 	  <a href="https://github.com/"  id="githublogo"><img src="img/icon-github.png" /></a>
 	</div>
-	
-	<!--主体部分-->
-    <div id="mainsection">
-	   <div id="tabsection">
-	   
-	       <ul id="alignnavbar">
-		      <li class="tablist"><a href="#" class="tablink" id="firstlink">ALL</a></li>
-			  <li class="tablist">
-			     <a href="#" class="tablink">NULL</a>
-			     <ul class="downlist">
-				    <li><a href="#" class="downlink">NULL</a></li>
-					<li><a href="#" class="downlink">NULL</a></li>
-					<li><a href="#" class="downlink">NULL</a></li>
-				 </ul>
-			  </li>
-			  <li class="tablist">
-			     <a href="#" class="tablink">NULL</a>
-				 
-			  </li>
-			  <li class="tablist">
-			     <a href="#" class="tablink">NULL</a>
-				 
-			  </li>
-			  <li class="tablist">
-			     <a href="#" class="tablink">NULL</a>
-				 
-			  </li>
-		   </ul>
-		   <div id="displaytablist">
-		     
+	<div id="mainsection">
+		<div id="articlesection">
+		   <div class="article">
+			 <h2>Category...</h2>
+			 <div class="accordion">
+				<div class="accordion-item">
+				  <div class="accordion-header">JAVA</div>
+				  <div class="accordion-content"><a href="#">JVM</a><br/><a href="#">Java数据结构与算法</a><br/><a href="#">Java高并发</a></div>
+				</div><br/>
+				<div class="accordion-item">
+				  <div class="accordion-header">MySQL</div>
+				  <div class="accordion-content"><a href="#">MySQL基础</a><br/><a href="#">MySQL高级</a></div>
+				</div><br/>
+				<div class="accordion-item">
+				  <div class="accordion-header">后端开发</div>
+				  <div class="accordion-content"><a href="#">Redis设计与实现</a><br/><a href="#">Redis学习</a></div>
+				</div><br/>
+				<div class="accordion-item">
+					<div class="accordion-header">计算机基础</div>
+					<div class="accordion-content"><a href="#">计算机网络基础</a><br/><a href="#">计算机组成原理</a><br/><a href="#">操作系统</a><br/><a href="#">数据结构与算法</a></div>
+				  </div>
+			  </div>
 		   </div>
-	   </div>
-	   
-	   <div id="siderbarsection">
-	      <!--搜索框-->
-	      <div id="searchbox">
-		     <form action="#" method="get" id="searchform">
-			    <fieldset id="search">
-			      <label for="searchwords"><img src="img/search.png" /></label>
-                  <input type="text" name="searchwords" id="searchwords" value="Keywords" />
-                  <input type="button" name="go" id="go" value="GO" />
-			    </fieldset>
-			 </form>
-		  </div>
-		  
-		  
-		  
-	   </div>
-	</div>
+		   
+		   <div id="pagenumberbox">
+			 <ol id="pagenumber">
+				<li><a href="#" class="pagelink">第一页</a></li>
+				<li><a href="#" class="pagelink">前一页</a></li>
+				<li><a href="#" class="pagelink">1</a></li>	 
+				<li><a href="#" class="pagelink">2</a></li>	 
+				<li><a href="#" class="pagelink">3</a></li>	 
+				<li><a href="#" class="pagelink">4</a></li>
+				<li><a href="#" class="pagelink">...</a></li>
+				<li><a href="#" class="pagelink">下一页</a></li>	
+				<li id="lastpage"><a href="http://www.baidu.com/" class="pagelink">最后一页</a></li>
+			 </ol>
+		   </div>
+		</div>
+		
+		<div id="siderbarsection">
+		   <!--搜索框-->
+		   <div id="searchbox">
+			  <form action="#" method="get" id="searchform">
+				 <fieldset id="search">
+				   <label for="searchwords"><img src="img/search.png" /></label>
+				   <input type="text" name="searchwords" id="searchwords" value="Keywords" />
+				   <input type="button" name="go" id="go" value="GO" />
+				 </fieldset>
+			  </form>
+		   </div>
+		   
+		   <!--右侧导航栏-->
+		   <div id="sidernavcase">
+			 <ul id="sidernav">
+				<li><a href="#" class="sidernavlink">MySQL</a></li>
+				<li><a href="#" class="sidernavlink">JAVA</a></li>
+				<li><a href="#" class="sidernavlink">HTML</a></li>
+				<li><a href="#" class="sidernavlink">其他文章</a></li>
+			 </ul>
+		   </div>
+
+		</div>
+	 </div>
+	
 	
 	
 	
 	<!--The footer of the index page.-->
 	<div id="footer">
 	   <ul id="footernavbar">
-        <li><a href="index.html" class="navlink">首页</a></li>
-        <li><a href="article.html" class="navlink">文章</a></li>
-        <li><a href="gallery.html" class="navlink">作品</a></li>
-        <li><a href="categories.html" class="navlink">种类</a></li>
-        <li><a href="links.html" class="navlink">联系</a></li>
-        <li><a href="about.html" class="navlink">关于</a></li>
+		<li><a href="index.html" class="navlink">首页</a></li>
+		<li><a href="article.html" class="navlink">文章</a></li>
+		<li><a href="gallery.html" class="navlink">作品</a></li>
+		<li><a href="categories.html" class="navlink">种类</a></li>
+		<li><a href="links.html" class="navlink">联系</a></li>
+		<li><a href="about.html" class="navlink">关于</a></li>
 	   </ul>
 	   
 	   <div id="reference">
@@ -146,6 +161,22 @@
 	
 	
     <script>
+
+		// 折叠展开框
+		var accordionItems = document.querySelectorAll('.accordion-item');
+		accordionItems.forEach(function(item) {
+		var header = item.querySelector('.accordion-header');
+		var content = item.querySelector('.accordion-content');
+
+		header.addEventListener('click', function() {
+			if (content.style.display === 'none') {
+			content.style.display = 'block';
+			} else {
+			content.style.display = 'none';
+			}
+		});
+		});
+
        function hiddenGithub() {
 	      var html = document.documentElement;
 		  var githublogo = document.getElementById("githublogo");

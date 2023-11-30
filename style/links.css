@@ -49,6 +49,7 @@ body{
 /*************footer导航条样式**************/
 #footer{
 	background-color: #000000;
+	text-align: center;
 	font-size: 14px;
 	color: #FFFFFF;
 	min-width: 980px;
@@ -191,7 +192,7 @@ a.referencelink{
 	margin: auto;
 }
 #selfintruction{
-	
+	text-align: center;
 	
 }
 #selfintruction h2{

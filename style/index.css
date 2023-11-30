@@ -126,7 +126,7 @@ a.referencelink{
 	margin-bottom: 12px;
 }
 #formaltext p{
-	font-size: 12px;
+	font-size: 20px;
     line-height: 150%;
 } 
 /*****正文部分三列等高样式******/
@@ -175,7 +175,7 @@ a.referencelink{
 	position: absolute;
     width: 130px;
     height: 130px;
-    background: url('../img/nian.jpg');
+    background: url('../img/nian.jpg') ;
     background-repeat: no-repeat;
     background-size: cover;
     border: solid 2px #FFF;
@@ -183,6 +183,37 @@ a.referencelink{
 	left: 0;
 	right: 0;
 	top: -50px;
+	margin: auto;
+}
+#minImg1{
+	display: block;
+    width: 270px;
+    height: 180px;
+    background: url('../img/橘子洲.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding-bottom:20px;
+	margin: auto;
+}
+#minImg2{
+	display: block;
+    width: 270px;
+	height: 180px;
+    background: url('../img/playground.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+	padding-bottom:20px;
+	margin: auto;
+}
+#minImg3{
+	display: block;
+	/* position: absolute; */
+    width: 270px;
+	height: 180px;
+    background: url('../img/天门山.jpg') center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding-bottom:20px;
 	margin: auto;
 }
 /* #headpic{
